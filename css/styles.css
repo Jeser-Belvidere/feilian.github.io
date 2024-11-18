@@ -6,7 +6,7 @@
   align-items: center;
   @media screen and (width < 440px) {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 60px 2fr;
     gap: 20px;
   }
 }
@@ -22,7 +22,7 @@
     align-items: flex-end;
     gap: 10px;
     .nav-link {
-      margin-left: 20px;
+      margin-left: 0;
     }
   }
 }
@@ -34,7 +34,7 @@
   background-size: cover;
   height: 540px;
   @media screen and (width < 440px) {
-    height: 240px;
+    height: 250px;
   }
 }
 
@@ -56,7 +56,7 @@
 
   @media screen and (width < 440px) {
     right: 0%;
-    top: 0%;
+    top: 0;
   }
 }
 .home-content-button-wrapper {
@@ -146,7 +146,7 @@
     }
   }
   @media screen and (width < 440px) {
-    height: 135px;
+    height: 150px;
   }
 }
 

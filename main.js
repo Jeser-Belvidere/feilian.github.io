@@ -60,17 +60,18 @@ const engDictionary = {
   product_nickel: "Nickel plate",
   product_lumber: "Lumber",
   //CONTACTS
+  contacts_title: "Contacts",
   address: "Address:",
   email: "Email:",
-  language_btn: "中文 Chinese",
+  language_btn: "简体中文 Chinese",
   read_more_btn: "Read more",
-  language_btn_footer: "中文 Chinese",
+  language_btn_footer: "简体中文 Chinese",
 };
 
 const cnDictionary = {
   //NAVIGATION
   home_nav: "首页",
-  about_nav: "联系我们",
+  about_nav: "关于我们",
   contacts_nav: "商品列表",
   products_nav: "联系方式",
   contacts_nav_footer: "商品列表",
@@ -81,15 +82,16 @@ const cnDictionary = {
   //ABOUT
   about_title: "为您提供最好的供应商!",
   about_text1:
-    "年进出口额超过20,000,000美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
+    "FEILIAN COMPANY LIMITED成立于2022年，有着丰富的商品进出口经验。我们公司的年进出口总额超过2000万美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
   about_text2:
     "多年的坚持和倡导使我们更加专业! 公司的首要任务是履行我们的义务!",
   about_text3:
-    "FEILIAN COMPANY LIMITED成立于2022年，有着丰富的商品进出口经验。我们公司的年进出口额超过2000万美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
-  about_text4: "",
-  volume_description: "年进出口量超过",
+    "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战，使客户能够专注于自己的业务。在寻找产品的过程中，我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
+  about_text4:
+    "我们公司拥有丰富的业内经验，包括：与专业采购人员合作、多年的贸易交流、以及了解独联体和亚洲国家需求。此外，我们在行业内享有很高的声誉和影响力。",
+  volume_description: "年进出口总额超过",
   //PRODUCTS
-  product_title: "产品中心",
+  product_title: "商品列表",
   product_electronics: "电子产品",
   product_equipment: "设备",
   product_shoes: "鞋子",
@@ -106,6 +108,7 @@ const cnDictionary = {
   product_nickel: "镍板",
   product_lumber: "木材;木材",
   //CONTACTS
+  contacts_title: "联系方式",
   address: "地址:",
   email: "电子邮件:",
   language_btn: "英语 English",
@@ -116,13 +119,6 @@ const cnDictionary = {
 // zn | en
 let currentLang = "en";
 
-if (isChineseUserLang) {
-  currentLang = "zn";
-} else if (isEnglishUserLang) {
-  currentLang = "en";
-} else {
-  currentLang = "en";
-}
 const onLanguageChange = (e) => {
   if (currentLang === "zn") {
     for (let key of Object.keys(engDictionary)) {
@@ -140,6 +136,15 @@ const onLanguageChange = (e) => {
     return;
   }
 };
+
+if (isChineseUserLang) {
+  currentLang = "zn";
+  onLanguageChange();
+} else if (isEnglishUserLang) {
+  currentLang = "en";
+} else {
+  currentLang = "en";
+}
 
 document
   .getElementById("language_btn")
