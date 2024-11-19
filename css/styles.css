@@ -66,19 +66,6 @@
   align-items: start;
 }
 
-.br-desktop {
-  @media screen and (width < 440px) {
-    display: none;
-  }
-}
-
-.br-mobile {
-  display: none;
-  @media screen and (width < 440px) {
-    display: block;
-  }
-}
-
 /* ABOUT SECTION */
 .about-section {
   display: flex;
@@ -175,17 +162,19 @@
 .contacts-card-content {
   display: grid;
   grid-template-columns: 90px 210px;
-  gap: 20px;
+  gap: 40px;
   margin-left: 160px;
   margin-right: 160px;
   @media screen and (width < 440px) {
-    gap: 0;
+    gap: 30px;
     row-gap: 10px;
     margin-left: 12px;
     margin-right: 12px;
   }
 }
 .contacts_label {
+  display: flex;
+  justify-content: flex-end;
   font-size: 14px;
 }
 

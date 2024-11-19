@@ -72,10 +72,10 @@ const cnDictionary = {
   //NAVIGATION
   home_nav: "首页",
   about_nav: "关于我们",
-  contacts_nav: "商品列表",
-  products_nav: "联系方式",
-  contacts_nav_footer: "商品列表",
-  products_nav_footer: "联系方式",
+  contacts_nav: "联系方式",
+  products_nav: "商品列表",
+  contacts_nav_footer: "联系方式",
+  products_nav_footer: "商品列表",
   home_nav_footer: "首页",
   about_nav_footer: "关于我们",
   home_text1: "成立于2022年, 已经拥有了丰富的货物进出口经验",
@@ -86,9 +86,9 @@ const cnDictionary = {
   about_text2:
     "多年的坚持和倡导使我们更加专业! 公司的首要任务是履行我们的义务!",
   about_text3:
-    "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战, 使客户能够专注于自己的业务。在寻找产品的过程中，我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
+    "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战, 使客户能够专注于自己的业务。在寻找产品的过程中, 我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
   about_text4:
-    "我们公司拥有丰富的业内经验，包括：与专业采购人员合作、多年的贸易交流、以及了解独联体和亚洲国家需求。此外，我们在行业内享有很高的声誉和影响力。",
+    "我们公司拥有丰富的业内经验, 包括：与专业采购人员合作、多年的贸易交流、以及了解独联体和亚洲国家需求。此外, 我们在行业内享有很高的声誉和影响力。",
   volume_description: "年进出口总额超过",
   //PRODUCTS
   product_title: "商品列表",

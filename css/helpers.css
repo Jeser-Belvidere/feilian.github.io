@@ -42,3 +42,16 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.br-desktop {
+  @media screen and (width < 440px) {
+    display: none;
+  }
+}
+
+.br-mobile {
+  display: none;
+  @media screen and (width < 440px) {
+    display: block;
+  }
+}
