@@ -22,7 +22,7 @@
     align-items: flex-end;
     gap: 10px;
     .nav-link {
-      margin-left: 0;
+      margin-left: 20px;
     }
   }
 }
@@ -34,7 +34,7 @@
   background-size: cover;
   height: 540px;
   @media screen and (width < 440px) {
-    height: 250px;
+    height: 280px;
   }
 }
 
@@ -55,6 +55,7 @@
   }
 
   @media screen and (width < 440px) {
+    padding-top: 20px;
     right: 0%;
     top: 0;
   }
@@ -63,6 +64,19 @@
   width: 100%;
   display: flex;
   align-items: start;
+}
+
+.br-desktop {
+  @media screen and (width < 440px) {
+    display: none;
+  }
+}
+
+.br-mobile {
+  display: none;
+  @media screen and (width < 440px) {
+    display: block;
+  }
 }
 
 /* ABOUT SECTION */
@@ -176,7 +190,10 @@
 }
 
 .contacts_description {
+  display: flex;
   font-size: 12px;
+  height: 100%;
+  align-items: center;
 }
 
 /* FOOTER */

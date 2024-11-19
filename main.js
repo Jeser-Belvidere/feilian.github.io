@@ -10,25 +10,25 @@ const engDictionary = {
   home_nav: "Home",
   about_nav: "About us",
   products_nav: "Products",
-  contacts_nav: "Contact us",
-  contacts_nav_footer: "Contact us",
+  contacts_nav: "Contacts",
+  contacts_nav_footer: "Contacts",
   products_nav_footer: "Products",
   home_nav_footer: "Home",
   about_nav_footer: "About us",
   //HOME
   home_text1:
-    "FEILIAN COMPANY LIMITED was established in 2022 and already has rich experience in the import and export of goods.",
+    "Feilian Company Limited was established in 2022 and already <br /> has rich experience in the import <br /> and export of goods.",
   //ABOUT
   about_title: "The best suppliers for you",
   about_text1: `FEILIAN COMPANY LIMITED was founded in 2022 and already has extensive
-          experience in exporting and importing goods. The annual volume of
+          experience in exporting and importing goods. <br /> The annual volume of
           imports and exports exceeds $20,000,000. We have close relationship
           with large and medium-sized trading companies, manufacturers,
           factories and large chain supermarkets in the CIS countries. Our
           suppliers and customers are located throughout Central Asia, China,
           UAE and other countries and regions.`,
   about_text2:
-    "Years of perseverance and advocacy make us more professional! The company's priority is the fulfillment of our obligations!",
+    "Years of perseverance and advocacy make us more professional! <br /> The company's priority is the fulfillment of our obligations!",
   about_text3: `FEILIAN COMPANY LIMITED has been helping clients with one common goal
           — finding the best options that fit our customers’ profile perfectly.
           We enable our customers to stay focused on their business by creating
@@ -50,7 +50,7 @@ const engDictionary = {
   product_socks: "Socks",
   product_suitcases: "Suitcases",
   product_flowers: "Artificial flowers",
-  product_mother_child: "Aluminum",
+  product_mother_child: "Mother and child products",
   product_aluminum: "Aluminum",
   product_furniture: "Furniture",
   product_lamp: "Lamp",
@@ -77,16 +77,16 @@ const cnDictionary = {
   contacts_nav_footer: "商品列表",
   products_nav_footer: "联系方式",
   home_nav_footer: "首页",
-  about_nav_footer: "联系我们",
-  home_text1: "成立于2022年， 已经拥有了丰富的货物进出口经验",
+  about_nav_footer: "关于我们",
+  home_text1: "成立于2022年, 已经拥有了丰富的货物进出口经验",
   //ABOUT
   about_title: "为您提供最好的供应商!",
   about_text1:
-    "FEILIAN COMPANY LIMITED成立于2022年，有着丰富的商品进出口经验。我们公司的年进出口总额超过2000万美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
+    "FEILIAN COMPANY LIMITED成立于2022年, 有着丰富的商品进出口经验。我们公司的年进出口总额超过2000万美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
   about_text2:
-    "多年的坚持和倡导使我们更加专业! 公司的首要任务是履行我们的义务!",
+    "多年的坚持和倡导使我们更加专业! 公司的首要任务是履行我们的义务!",
   about_text3:
-    "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战，使客户能够专注于自己的业务。在寻找产品的过程中，我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
+    "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战, 使客户能够专注于自己的业务。在寻找产品的过程中，我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
   about_text4:
     "我们公司拥有丰富的业内经验，包括：与专业采购人员合作、多年的贸易交流、以及了解独联体和亚洲国家需求。此外，我们在行业内享有很高的声誉和影响力。",
   volume_description: "年进出口总额超过",
@@ -106,7 +106,7 @@ const cnDictionary = {
   product_swimming: "游泳用品",
   product_chemical: "化工产品",
   product_nickel: "镍板",
-  product_lumber: "木材;木材",
+  product_lumber: "木料",
   //CONTACTS
   contacts_title: "联系方式",
   address: "地址:",
@@ -122,17 +122,19 @@ let currentLang = "en";
 const onLanguageChange = (e) => {
   if (currentLang === "zn") {
     for (let key of Object.keys(engDictionary)) {
-      document.getElementById(key).textContent = engDictionary[key];
+      document.getElementById(key).innerHTML = engDictionary[key];
     }
     currentLang = "en";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return;
   }
 
   if (currentLang === "en") {
     for (let key of Object.keys(cnDictionary)) {
-      document.getElementById(key).textContent = cnDictionary[key];
+      document.getElementById(key).innerHTML = cnDictionary[key];
     }
     currentLang = "zn";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return;
   }
 };
