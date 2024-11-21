@@ -24,6 +24,11 @@
     .nav-link {
       margin-left: 20px;
     }
+    @media screen and (width < 340px) {
+      .nav-link {
+        margin-left: 0;
+      }
+    }
   }
 }
 
