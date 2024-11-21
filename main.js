@@ -1,9 +1,6 @@
 const userLang = navigator.language || navigator.userLanguage;
 const zhRegExp = /zh/;
-const enRegExp = /en/;
-
 const isChineseUserLang = zhRegExp.test(userLang);
-const isEnglishUserLang = enRegExp.test(userLang);
 
 const engDictionary = {
   //NAVIGATION
@@ -119,7 +116,7 @@ const cnDictionary = {
 // zn | en
 let currentLang = "en";
 
-const onLanguageChange = (e) => {
+const onLanguageChange = () => {
   if (currentLang === "zn") {
     for (let key of Object.keys(engDictionary)) {
       document.getElementById(key).innerHTML = engDictionary[key];
@@ -140,12 +137,7 @@ const onLanguageChange = (e) => {
 };
 
 if (isChineseUserLang) {
-  currentLang = "zn";
   onLanguageChange();
-} else if (isEnglishUserLang) {
-  currentLang = "en";
-} else {
-  currentLang = "en";
 }
 
 document
