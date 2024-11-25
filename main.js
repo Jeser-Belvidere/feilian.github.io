@@ -17,13 +17,10 @@ const engDictionary = {
     "Feilian Company Limited was established in 2022 and already <br /> has rich experience in the import <br /> and export of goods.",
   //ABOUT
   about_title: "The best suppliers for you",
-  about_text1: `FEILIAN COMPANY LIMITED was founded in 2022 and already has extensive
-          experience in exporting and importing goods. <br /> The annual volume of
-          imports and exports exceeds $20,000,000. We have close relationship
-          with large and medium-sized trading companies, manufacturers,
-          factories and large chain supermarkets in the CIS countries. Our
-          suppliers and customers are located throughout Central Asia, China,
-          UAE and other countries and regions.`,
+  about_text1: `FEILIAN COMPANY LIMITED was founded in 2022 and already has extensive experience in exporting and importing goods. <br/>
+            We have close relationship with large and medium-sized trading companies, manufacturers, 
+            factories and large chain supermarkets. Our suppliers and customers are located 
+            throughout Central Asia, China, Continental Europe and other countries and regions.`,
   about_text2:
     "Years of perseverance and advocacy make us more professional! <br /> The company's priority is the fulfillment of our obligations!",
   about_text3: `FEILIAN COMPANY LIMITED has been helping clients with one common goal
@@ -34,11 +31,10 @@ const engDictionary = {
           account the following main requirements: high-quality product,
           reasonable price, accurate delivery times and the best customer
           service.`,
-  about_text4: `The company has extensive experience working with professional
-          procurement staff, years of experience in trade exchange, as well as
-          understanding the needs of CIS and Asia countries. Moreover FEILIAN
-          COMPANY LIMITED has a high reputation and influence in the industry.`,
-  volume_description: "The annual import and export volume exceeds",
+  about_text4: `The company has extensive experience working with professional 
+          procurement staff, years of experience in trade exchange, as well as understanding 
+          the needs of Asia countries. Moreover FEILIAN COMPANY LIMITED has a high reputation 
+          and influence in the industry.`,
   //PRODUCTS
   product_title: "Products",
   product_electronics: "Electronics",
@@ -79,14 +75,13 @@ const cnDictionary = {
   //ABOUT
   about_title: "为您提供最好的供应商!",
   about_text1:
-    "FEILIAN COMPANY LIMITED成立于2022年, 有着丰富的商品进出口经验。我们公司的年进出口总额超过2000万美元。我们与独联体国家的大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国、阿联酋和其他国家和地区。",
+    "FEILIAN COMPANY LIMITED成立于2022年, 有着丰富的商品进出口经验。我们与大中型贸易公司、制造商、工厂和大型连锁超市有着密切的关系。我们的供应商和客户遍布中亚、中国和其他国家和地区。",
   about_text2:
     "多年的坚持和倡导使我们更加专业! 公司的首要任务是履行我们的义务!",
   about_text3:
     "FEILIAN COMPANY LIMITED一直在帮助客户实现一个共同的目标——找到最好、最适合客户个人资料的选项。我们通过创建和管理解决方案来解决复杂环境中的供应链挑战, 使客户能够专注于自己的业务。在寻找产品的过程中, 我们考虑了以下主要要求：高质量的产品、合理的价格、准确的交货时间和最好的客户服务。",
   about_text4:
     "我们公司拥有丰富的业内经验, 包括：与专业采购人员合作、多年的贸易交流、以及了解独联体和亚洲国家需求。此外, 我们在行业内享有很高的声誉和影响力。",
-  volume_description: "年进出口总额超过",
   //PRODUCTS
   product_title: "商品列表",
   product_electronics: "电子产品",
